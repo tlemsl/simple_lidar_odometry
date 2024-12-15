@@ -107,7 +107,7 @@ void SimpleLO::scanCallback(const sensor_msgs::LaserScan::ConstPtr& scan) {
         pose_pub_.publish(pose);
 
         // Publish transform
-        publishTransform(scan->header.stamp);
+        // publishTransform(scan->header.stamp);
 
         // Update previous cloud
         *previous_cloud_ = *current_cloud;
